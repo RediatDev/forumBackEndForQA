@@ -438,7 +438,7 @@ const userPasswordResetRequest = async (req, res) => {
     }
     const sendEmail = () => {
       // Create a password reset link (implement your own logic here)
-      const resetLink = `${process.env.HTTP_STATUS}://${process.env.FRONTEND_URL}/userPasswordReset/${user.userId}`;
+   const resetLink = `${process.env.FRONTEND_URL}/api/userPasswordReset/${user.userId}`;
       // const resetLink = `${process.env.FRONTEND_URL}/userPasswordReset/${user.userId}`;
 
       // Send the reset link via email (implement your own email sending logic here)
