@@ -537,6 +537,7 @@ const userPasswordResetRequest = async (req, res) => {
         } else {
           console.log("Email sent:", info.response);
           res.status(200).json({ message: ["Password reset email sent"] });
+          console.log("email sent correctly")
         }
       });
     };
